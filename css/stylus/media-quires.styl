@@ -1,0 +1,52 @@
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+// desktop only
+.visible-phone     { display : none !important; }
+.visible-tablet    { display : none !important; }
+.hidden-phone      { }
+.hidden-tablet     { }
+.hidden-desktop    { display : none !important; }
+.visible-desktop   { display : inherit !important; }
+
+// Tablets & small desktops only
+@media (min-width: 768px) and (max-width: 979px) {
+	// Hide everything else
+	.hidden-desktop    { display : inherit !important; }
+	.visible-desktop   { display : none !important ; }
+	// Show
+	.visible-tablet    { display : inherit !important; }
+	// Hide
+	.hidden-tablet     { display : none !important; }
+}
+
+// Phones only
+@media (max-width: 767px) {
+	// Hide everything else
+	.hidden-desktop    { display : inherit !important; }
+	.visible-desktop   { display : none !important; }
+	// Show
+	.visible-phone     { display : inherit !important; } // Use inherit to restore previous behavior
+	// Hide
+	.hidden-phone      { display : none !important; }
+}
+
+/* Smaller than standard 960 */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {}

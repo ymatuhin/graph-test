@@ -1,0 +1,587 @@
+
+/* line 1 : C:\Program Files (x86)\Prepros\node_modules\stylus\lib\functions\index.styl */
+
+/* line 13 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\index.styl */
+
+/* line 2 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\border.styl */
+
+/* line 2 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\clearfix.styl */
+
+/* line 2 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\color-image.styl */
+
+/* line 6 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\flex.styl */
+
+/* line 154 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\gradients.styl */
+
+/* line 154 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\config.styl */
+
+/* line 2 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\iconic.styl */
+
+/* line 2 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\image.styl */
+
+/* line 15 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\overflow.styl */
+
+/* line 3 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\positions.styl */
+
+/* line 3 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\reset.styl */
+
+/* line 5 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\text\index.styl */
+
+/* line 2 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\text\aliases.styl */
+
+/* line 2 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\text\ellipsis.styl */
+
+/* line 11 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\text\hide-text.styl */
+
+/* line 9 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\text\replace-text.styl */
+
+/* line 557 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\vendor.styl */
+
+/* line 557 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\config.styl */
+
+/* line 3 : C:\Users\kkartamyshev\Dropbox\test\www\css\stylus\if-ie.styl */
+
+/* line 6 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+/*=================================
+=            Variables            =
+=================================*/
+
+/* line 20 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+/*===============================
+=            Imports            =
+===============================*/
+
+/* line 1 : C:\Users\kkartamyshev\Dropbox\test\www\css\stylus\mixins.styl */
+
+/* line 87 : C:\Users\kkartamyshev\Dropbox\test\www\css\stylus\helpers.styl */
+
+/* line 1 : C:\Users\kkartamyshev\Dropbox\test\www\css\stylus\helpers.styl */
+.hidden,
+[hidden],
+.js .no-script {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 6 : C:\Users\kkartamyshev\Dropbox\test\www\css\stylus\helpers.styl */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 9 : C:\Users\kkartamyshev\Dropbox\test\www\css\stylus\helpers.styl */
+.ir {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 14 : C:\Users\kkartamyshev\Dropbox\test\www\css\stylus\helpers.styl */
+
+/* line 18 : C:\Users\kkartamyshev\Dropbox\test\www\css\stylus\helpers.styl */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+/* line 23 : C:\Users\kkartamyshev\Dropbox\test\www\css\stylus\helpers.styl */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 26 : C:\Users\kkartamyshev\Dropbox\test\www\css\stylus\helpers.styl */
+.clear {
+  clear: both;
+}
+
+/* line 29 : C:\Users\kkartamyshev\Dropbox\test\www\css\stylus\helpers.styl */
+
+/* line 34 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+/*======================================
+=            Default styles            =
+======================================*/
+
+/* line 4 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\reset.styl */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 7 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\reset.styl */
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+
+/* line 9 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\reset.styl */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 11 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\reset.styl */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 13 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\reset.styl */
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 15 : C:\Program Files (x86)\Prepros\node_modules\nib\lib\nib\reset.styl */
+a img {
+  border: none;
+}
+
+/* line 40 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.browsehappy,
+.no-script {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* line 47 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+html,
+button,
+input,
+select,
+textarea {
+  color: #000;
+}
+
+/* line 59 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+
+/* line 59 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+audio,
+canvas,
+video,
+img {
+  vertical-align: middle;
+}
+
+/* line 65 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+::-webkit-selection,
+::-moz-selection,
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 73 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+/*===================================
+=            Main styles            =
+===================================*/
+
+/* line 77 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+html {
+  min-height: 100%;
+}
+
+/* line 80 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+body {
+  min-height: 100%;
+  width: 1164px;
+  background: #f9f8f7;
+  margin: 0 auto;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: Arial, Tahoma, Verdana, sans-serif;
+  color: #000;
+}
+
+/* line 90 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.settings {
+  width: 990px;
+  padding-top: 50px;
+  margin-left: 109px;
+}
+
+/* line 95 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.settings label,
+.settings textarea,
+.settings input {
+  display: block;
+}
+
+/* line 100 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.settings textarea {
+  border: 0;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 0 6px #666;
+  box-shadow: inset 0 0 6px #666;
+  width: 100%;
+  height: 200px;
+  resize: none;
+}
+
+/* line 111 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph {
+  position: relative;
+  z-index: 5;
+  width: 990px;
+  table-layout: fixed;
+}
+
+/* line 117 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__price {
+  float: left;
+  width: 100px;
+  position: relative;
+  top: -20px;
+  height: 240px;
+  color: #999;
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+/* line 127 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__price td {
+  text-align: right;
+  padding-right: 23px;
+}
+
+/* line 131 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__days {
+  width: 100%;
+  height: 34px;
+  table-layout: fixed;
+}
+
+/* line 139 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__days td {
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+}
+
+/* line 144 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__days i {
+  color: #999;
+  font-style: normal;
+}
+
+/* line 148 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__box {
+  margin-top: 51px;
+  margin-left: 9px;
+}
+
+/* line 152 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__container {
+  width: 990px;
+  position: relative;
+  margin-left: 100px;
+}
+
+/* line 157 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__lines {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 990px;
+  height: 200px;
+}
+
+/* line 165 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__lines li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: #ececeb;
+}
+
+/* line 174 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__lines li.l1 {
+  top: 0px;
+}
+
+/* line 177 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__lines li.l2 {
+  top: 40px;
+}
+
+/* line 180 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__lines li.l3 {
+  top: 80px;
+}
+
+/* line 183 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__lines li.l4 {
+  top: 120px;
+}
+
+/* line 186 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__lines li.l5 {
+  top: 160px;
+}
+
+/* line 189 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__lines li.l6 {
+  top: 200px;
+}
+
+/* line 192 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph tr {
+  height: 200px;
+}
+
+/* line 195 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph td {
+  position: relative;
+}
+
+/* line 198 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph td:hover {
+  background: #ff6f6f;
+  background: rgba(255,111,111,0.1);
+}
+
+/* line 201 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__m-line {
+  position: absolute;
+  z-index: 5;
+  top: 50px;
+  left: 0;
+  right: -1px;
+  height: 3px;
+  background: #ff7070;
+}
+
+/* line 210 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.graph__add-r-line {
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  width: 1px;
+  border-bottom: 3px solid #dfddd8;
+  background: #dfddd8;
+}
+
+/* line 221 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+/* Slider */
+
+/* line 223 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.slider__box {
+  position: relative;
+}
+
+/* line 226 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.slider-calendar {
+  position: absolute;
+  table-layout: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-border-radius: 13px/12px;
+  border-radius: 13px/12px;
+  background-color: #fff;
+  height: 24px;
+}
+
+/* line 236 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.slider-calendar td {
+  text-align: center;
+  position: relative;
+  font-size: 12px;
+  line-height: 26px;
+}
+
+/* line 242 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.slider-calendar td span {
+  position: relative;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* line 248 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.slider-calendar td .active {
+  position: relative;
+  line-height: 24px;
+  color: #fff;
+  z-index: 100;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.25);
+}
+
+/* line 255 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.ui-slider {
+  margin-top: 26px;
+  position: relative;
+  text-align: left;
+  height: 24px;
+  -webkit-border-radius: 13px/12px;
+  border-radius: 13px/12px;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.35);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.35);
+  cursor: pointer;
+}
+
+/* line 267 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 14px;
+  height: 24px;
+  top: 0;
+  cursor: pointer;
+  margin-left: -14px;
+}
+
+/* line 279 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.ui-slider-handle:after,
+.ui-slider-handle:before {
+  content: ' ';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  z-index: 10;
+  height: 9px;
+  width: 1px;
+  background: #f56a6a;
+  border-right: 1px solid #e54445;
+  cursor: pointer;
+}
+
+/* line 292 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.ui-slider-handle:before {
+  left: 3px;
+}
+
+/* line 296 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.ui-slider-handle:nth-child(2n) {
+  margin-left: 0;
+}
+
+/* line 297 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.ui-slider-handle:nth-child(2n):after {
+  left: auto;
+  right: 0;
+}
+
+/* line 301 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.ui-slider-handle:nth-child(2n):before {
+  left: auto;
+  right: 3px;
+}
+
+/* line 308 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.ui-slider-range {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  font-size: 0.7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+  margin-top: 1px;
+  height: 23px !important;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 2px 3px rgba(79,25,25,0.25), inset 0 0 2px #e55051;
+  box-shadow: 0 2px 3px rgba(79,25,25,0.25), inset 0 0 2px #e55051;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ee4646), color-stop(1, #ff5c5c));
+  background-image: -webkit-linear-gradient(bottom, #ee4646 0%, #ff5c5c 100%);
+  background-image: -moz-linear-gradient(bottom, #ee4646 0%, #ff5c5c 100%);
+  background-image: -o-linear-gradient(bottom, #ee4646 0%, #ff5c5c 100%);
+  background-image: -ms-linear-gradient(bottom, #ee4646 0%, #ff5c5c 100%);
+  background-image: linear-gradient(bottom, #ee4646 0%, #ff5c5c 100%);
+}
+
+/* line 328 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.ui-slider-range-min {
+  left: 0;
+}
+
+/* line 331 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.ui-slider-range-max {
+  right: 0;
+}
+
+/* line 334 : C:\Users\kkartamyshev\Dropbox\test\www\css\style.styl */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+  filter: inherit;
+}

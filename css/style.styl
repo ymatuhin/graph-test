@@ -1,0 +1,336 @@
+@import "nib"
+@import "stylus/if-ie"
+
+
+
+/*=================================
+=            Variables            =
+=================================*/
+
+pageBg  = #f9f8f7
+textClr = #000
+linkD   = #08c
+linkH   = darken(linkD, 15%)
+linkV   = #0000aa
+linkA   = #dd0000
+baseFF  = Arial, Tahoma, Verdana, sans-serif
+
+
+
+/*===============================
+=            Imports            =
+===============================*/
+
+@import "stylus/mixins"
+@import "stylus/helpers"
+
+// @import "stylus/typografy"
+// @import "stylus/fonts"
+// @import "stylus/media-quires"
+// @import "stylus/print.css"
+
+
+
+/*======================================
+=            Default styles            =
+======================================*/
+
+global-reset()
+
+.browsehappy
+.no-script
+	margin 0.2em 0
+	background #ccc
+	color #000
+	padding 0.2em 0
+
+html
+button
+input
+select
+textarea
+	color textClr
+
+if ie
+	img
+		vertical-align middle
+
+if !ie
+	audio
+	canvas
+	video
+	img
+		vertical-align middle
+
+	::-webkit-selection
+	::-moz-selection
+	::selection
+		background #b3d4fc
+		text-shadow none
+
+
+
+/*===================================
+=            Main styles            =
+===================================*/
+
+html
+	min-height 100%
+
+body
+	min-height 100%
+	width 1164px
+	background pageBg
+	margin 0 auto
+	font-size: 1em;
+	line-height: 1.4;
+	font-family baseFF
+	color textClr
+
+.settings
+	width 990px
+	padding-top 50px
+	margin-left 109px
+
+	label
+	textarea
+	input
+		display block
+
+	textarea
+		border 0
+		padding 10px
+		margin 0 0 10px 0
+		border-radius 6px
+		// overflow hidden
+		box-shadow inset 0 0 6px #666
+		width 100%
+		height 200px
+		resize none
+
+.graph
+	position relative
+	z-index 5
+	width 990px
+	table-layout fixed
+
+	&__price
+		float left
+		width 100px
+		position relative
+		top -20px
+		height 240px
+		color #999
+		font-size 11px
+		line-height 1.3
+
+		td
+			text-align right
+			padding-right 23px
+
+	&__days
+		width 100%
+		height 34px
+
+		// width 1020px
+		// margin-left -15px
+		table-layout fixed
+
+		td
+			text-align center
+			color #333
+			font-size 12px
+
+		i
+			color #999
+			font-style normal
+
+	&__box
+		margin-top 51px
+		margin-left 9px
+
+	&__container
+		width 990px
+		position relative
+		margin-left 100px
+
+	&__lines
+		position absolute
+		z-index 1
+		left 0
+		top 0
+		width 990px
+		height 200px
+
+		li
+			position absolute
+			top 0
+			left 0
+			right 0
+			width 100%
+			height 1px
+			background #ececeb
+
+			&.l1
+				top 0px
+
+			&.l2
+				top 40px
+
+			&.l3
+				top 80px
+
+			&.l4
+				top 120px
+
+			&.l5
+				top 160px
+
+			&.l6
+				top 200px
+
+	tr
+		height 200px
+
+	td
+		position relative
+
+		&:hover
+			bg-opacity #ff6f6f, .1
+
+	&__m-line
+		position absolute
+		z-index 5
+		top 50px
+		left 0
+		right -1px
+		height 3px
+		background #ff7070
+
+	&__add-r-line
+		position absolute
+		z-index 4
+		left 0
+		width 1px
+		border-bottom 3px solid #dfddd8
+		background #dfddd8
+
+
+
+
+/* Slider */
+
+.slider__box
+	position relative
+
+.slider-calendar
+	position absolute
+	table-layout fixed
+	left 0
+	top 0
+	width 100%
+	border-radius: 13px / 12px;
+	background-color: #fff;
+	height 24px
+
+	td
+		text-align center
+		position relative
+		font-size 12px
+		line-height 26px
+
+		span
+			position relative
+			cursor pointer
+			z-index 100
+
+
+		.active
+			position relative
+			line-height 24px
+			color #fff
+			z-index 100
+			text-shadow: 0 1px 0 rgba(0,0,0,.25);
+
+.ui-slider
+	margin-top 26px
+	position relative
+	text-align left
+	height 24px
+
+	border-radius: 13px / 12px;
+	// background-color: #fff;
+	border 1px solid #ddd
+	box-shadow: 0 1px 0 rgba(255,255,255,.35);
+	cursor pointer
+
+	&-handle
+		position absolute
+		z-index 2
+		width 14px
+		height 24px
+		top 0
+		cursor pointer
+		// background url(../slider-right.png) 0 0 no-repeat
+		margin-left -14px
+
+
+
+		&:after
+		&:before
+			content ' '
+			position absolute
+			top 8px
+			left 0
+			z-index 10
+			height 9px
+			width 1px
+			background #f56a6a
+			border-right 1px solid #e54445
+			cursor pointer
+
+		&:before
+			left 3px
+
+
+		&:nth-child(2n)
+			&:after
+				left auto
+				right 0
+
+			&:before
+				left auto
+				right 3px
+
+			margin-left 0
+			// background url(../slider-left.png) 0 0 no-repeat
+
+	&-range
+		position absolute
+		top 0
+		// margin-left 14px
+		z-index 1
+		font-size .7em
+		display block
+		border 0
+		background-position 0 0
+
+		margin-top 1px
+		height 23px !important
+
+
+		// border 1px solid #c54241
+		border-radius: 11px;
+		background-clip: padding-box;
+		box-shadow: 0 2px 3px rgba(79,25,25,.25), inset 0 0 2px #e55051;
+		background-image: linear-gradient(bottom, #ee4646 0%, #ff5c5c 100%);
+
+	&-range-min
+		left 0
+
+	&-range-max
+		right 0
+
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range
+	filter inherit
